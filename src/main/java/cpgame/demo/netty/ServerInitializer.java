@@ -1,14 +1,18 @@
 package cpgame.demo.netty;
 
+import com.nfbank.tech.kvproxy.redis.RedisCommandDecoder;
+import com.nfbank.tech.kvproxy.redis.RedisCommandHandler;
+import com.nfbank.tech.kvproxy.redis.RedisReplyEncoder;
+import com.nfbank.tech.kvproxy.redis.SimpleRedisServer;
+
 import cpgame.demo.dispatcher.HandlerDispatcher;
 import cpgame.demo.domain.ERequestType;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
 import io.netty.channel.socket.SocketChannel;
-import io.netty.handler.codec.LengthFieldBasedFrameDecoder;
-import io.netty.handler.codec.LengthFieldPrepender;
 import io.netty.handler.codec.http.HttpObjectAggregator;
 import io.netty.handler.codec.http.HttpServerCodec;
+import io.netty.handler.stream.ChunkedWriteHandler;
 import io.netty.handler.timeout.ReadTimeoutHandler;
 
 public class ServerInitializer extends ChannelInitializer<SocketChannel> {
@@ -21,17 +25,26 @@ public class ServerInitializer extends ChannelInitializer<SocketChannel> {
 	}
 
 	public void initChannel(SocketChannel ch) throws Exception {
+		System.out.println("this is ServerInitializer");
 		ChannelPipeline pipeline = ch.pipeline();
 		if (ERequestType.SOCKET.getValue().equals(this.requestType.trim().toLowerCase())) {
-			ch.pipeline().addLast("frameDecoder", new LengthFieldBasedFrameDecoder(Integer.MAX_VALUE, 0, 4, 0, 4));
-
-			ch.pipeline().addLast("frameEncoder", new LengthFieldPrepender(4));
+//			pipeline.addLast("frameDecoder", new LengthFieldBasedFrameDecoder(Integer.MAX_VALUE, 0, 4, 0, 4));
+//			pipeline.addLast("frameEncoder", new LengthFieldPrepender(4));
+			pipeline.addLast(new RedisCommandDecoder());
+			pipeline.addLast(new RedisReplyEncoder());
+			
+		}else if(ERequestType.WEBSOCKET_TEXT.getValue().equals(this.requestType.trim().toLowerCase())){
+			pipeline.addLast("codec-http", new HttpServerCodec());
+			pipeline.addLast("aggregator", new HttpObjectAggregator(65536));
+			pipeline.addLast("http-chunked",new ChunkedWriteHandler());
+			
 		} else {
 			pipeline.addLast("codec-http", new HttpServerCodec());
 			pipeline.addLast("aggregator", new HttpObjectAggregator(65536));
+			
 		}
 		pipeline.addLast("timeout", new ReadTimeoutHandler(this.timeout));
-		pipeline.addLast("handler", new ServerAdapter(this.handlerDispatcher));
+		pipeline.addLast("handler", new RedisCommandHandler(new SimpleRedisServer()));
 	}
 
 	public void setTimeout(int timeout) {

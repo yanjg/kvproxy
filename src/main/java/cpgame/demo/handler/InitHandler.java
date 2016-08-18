@@ -20,7 +20,7 @@ public class InitHandler implements GameHandler {
 	protected Logger logger = LoggerFactory.getLogger(getClass());
 
 	public void execute(GameRequest request, GameResponse response) {
-		this.logger.error(request.readString());
+		this.logger.info("收到的字符串为："+request.readString());
 		response.write("I am ok!");
 	}
 }

@@ -114,6 +114,9 @@ public class ClientTest {
 
 	public static void main(String[] args) throws Exception {
 		ClientTest client = new ClientTest();
-		client.connect("127.0.0.1", 8080, ERequestType.HTTP);
+//		System.out.println("the firest response");
+//		client.connect("127.0.0.1", 8080, ERequestType.HTTP);
+		System.out.println("the second response");
+		client.connect("127.0.0.1", 8080, ERequestType.SOCKET);
 	}
 }

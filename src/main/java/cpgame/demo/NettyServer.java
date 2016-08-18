@@ -1,7 +1,5 @@
 package cpgame.demo;
 
-import java.net.InetSocketAddress;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -9,6 +7,8 @@ import cpgame.demo.domain.ERequestType;
 import cpgame.demo.netty.ServerInitializer;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.Channel;
+import io.netty.channel.ChannelFuture;
+import io.netty.channel.ChannelOption;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
@@ -39,18 +39,25 @@ public class NettyServer {
 		try {
 			ServerBootstrap b = new ServerBootstrap();
 			((ServerBootstrap) b.group(bossGroup, workerGroup).channel(NioServerSocketChannel.class))
-					.childHandler(this.initializer);
+				.option(ChannelOption.SO_BACKLOG, 100)
+				.localAddress(port)
+				.childOption(ChannelOption.TCP_NODELAY, true)
+				.childHandler(this.initializer);
 
-			Channel ch = null;
 			this.logger.info(ERequestType.parse(this.initializer.getRequestType()).getValue()
 					+ " server started at port " + this.port + '.');
+			
+//			if (ERequestType.HTTP.equals(ERequestType.parse(this.initializer.getRequestType()))) {
+//				ch = b.bind(this.port).sync().channel();
+//			} else
+////				ch = b.bind(new InetSocketAddress(this.port)).sync().channel();
+//				ch = b.bind(this.port).sync().channel();
 
-			if (ERequestType.HTTP.equals(ERequestType.parse(this.initializer.getRequestType()))) {
-				ch = b.bind(this.port).sync().channel();
-			} else
-				ch = b.bind(new InetSocketAddress(this.port)).sync().channel();
+			// Start the server.
+	        ChannelFuture f = b.bind().sync();
 
-			ch.closeFuture().sync();
+	        // Wait until the server socket is closed.
+	        f.channel().closeFuture().sync();
 		} finally {
 			bossGroup.shutdownGracefully();
 			workerGroup.shutdownGracefully();

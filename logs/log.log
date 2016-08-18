@@ -183,3 +183,294 @@ io.netty.util.IllegalReferenceCountException: refCnt: 0, decrement: 1
 
 [2015-08-27 14:31:52,255][ERROR, (InitHandler.java:23).execute] are you ok?
 [2015-08-27 14:32:16,807][ERROR, (InitHandler.java:23).execute] are you ok?
+[2016-08-12 10:18:21,195][INFO, (NettyServer.java:45).run] websocket_text server started at port 8080.
+[2016-08-12 10:20:11,948][ERROR, (InitHandler.java:23).execute] Are you ok?
+[2016-08-12 14:12:02,814][INFO, (NettyServer.java:45).run] websocket_text server started at port 8080.
+[2016-08-12 14:14:05,602][ERROR, (InitHandler.java:23).execute] Are you ok?
+[2016-08-12 14:15:31,283][ERROR, (InitHandler.java:23).execute] Are you ok?
+[2016-08-12 14:16:31,341][INFO, (NettyServer.java:45).run] websocket_text server started at port 8080.
+[2016-08-12 14:16:49,687][ERROR, (InitHandler.java:23).execute] Are you ok?
+[2016-08-12 14:19:47,649][ERROR, (InitHandler.java:23).execute] Are you ok?
+[2016-08-12 14:20:26,915][ERROR, (InitHandler.java:23).execute] Are you ok?
+[2016-08-12 14:21:03,820][ERROR, (InitHandler.java:23).execute] Are you ok?
+[2016-08-12 14:21:03,833][ERROR, (HandlerDispatcher.java:132).run] java.lang.NullPointerException
+	at cpgame.demo.domain.GameResponse.<init>(GameResponse.java:39)
+	at cpgame.demo.dispatcher.HandlerDispatcher$MessageWorker.handMessageQueue(HandlerDispatcher.java:140)
+	at cpgame.demo.dispatcher.HandlerDispatcher$MessageWorker.run(HandlerDispatcher.java:130)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+[2016-08-12 14:21:53,715][ERROR, (InitHandler.java:23).execute] Are you ok?
+[2016-08-12 14:25:52,469][ERROR, (InitHandler.java:23).execute] Are you ok?
+[2016-08-12 14:26:53,975][ERROR, (InitHandler.java:23).execute] Are you ok?
+[2016-08-12 14:30:30,674][INFO, (NettyServer.java:45).run] websocket_text server started at port 8080.
+[2016-08-12 14:33:55,173][INFO, (InitHandler.java:23).execute] Are you ok?
+[2016-08-12 15:04:46,543][INFO, (InitHandler.java:23).execute] Are you ok?
+[2016-08-12 15:14:46,950][INFO, (NettyServer.java:45).run] websocket_text server started at port 8080.
+[2016-08-12 15:37:17,342][INFO, (InitHandler.java:23).execute] 收到的字符串为：Are you ok?
+[2016-08-15 14:38:14,333][INFO, (NettyServer.java:45).run] websocket_text server started at port 8080.
+[2016-08-15 16:20:49,064][INFO, (NettyServer.java:45).run] websocket_text server started at port 8080.
+[2016-08-15 16:37:56,920][INFO, (NettyServer.java:45).run] websocket_text server started at port 8080.
+[2016-08-15 16:39:16,661][INFO, (NettyServer.java:45).run] websocket_text server started at port 8080.
+[2016-08-15 16:53:26,901][INFO, (NettyServer.java:45).run] websocket_text server started at port 8080.
+[2016-08-15 17:06:29,808][INFO, (NettyServer.java:45).run] websocket_text server started at port 8080.
+[2016-08-15 17:09:40,349][INFO, (NettyServer.java:45).run] websocket_text server started at port 8080.
+[2016-08-15 17:13:44,773][INFO, (NettyServer.java:45).run] websocket_text server started at port 8080.
+[2016-08-15 17:20:56,155][INFO, (NettyServer.java:45).run] websocket_text server started at port 8080.
+[2016-08-15 17:42:27,005][INFO, (NettyServer.java:45).run] websocket_text server started at port 8080.
+[2016-08-15 17:51:07,118][INFO, (NettyServer.java:45).run] websocket_text server started at port 8080.
+[2016-08-16 09:45:44,189][INFO, (NettyServer.java:45).run] websocket_text server started at port 8080.
+[2016-08-16 09:52:22,157][INFO, (NettyServer.java:45).run] socket server started at port 8080.
+[2016-08-16 09:52:43,889][INFO, (NettyServer.java:45).run] socket server started at port 8080.
+[2016-08-16 09:56:00,908][INFO, (NettyServer.java:45).run] socket server started at port 8080.
+[2016-08-16 09:59:54,786][INFO, (NettyServer.java:45).run] socket server started at port 8080.
+[2016-08-16 10:05:01,919][INFO, (NettyServer.java:45).run] socket server started at port 8080.
+[2016-08-16 10:37:57,593][INFO, (NettyServer.java:45).run] http server started at port 8080.
+[2016-08-16 10:52:31,436][INFO, (InitHandler.java:23).execute] 收到的字符串为：are you ok?
+[2016-08-16 10:52:51,539][INFO, (InitHandler.java:23).execute] 收到的字符串为：are you okaaaa?
+[2016-08-16 10:52:59,836][INFO, (InitHandler.java:23).execute] 收到的字符串为：are you okaaaa?
+[2016-08-16 10:53:03,173][INFO, (InitHandler.java:23).execute] 收到的字符串为：are you okaaaa?
+[2016-08-16 10:53:04,045][INFO, (InitHandler.java:23).execute] 收到的字符串为：are you okaaaa?
+[2016-08-16 10:53:04,773][INFO, (InitHandler.java:23).execute] 收到的字符串为：are you okaaaa?
+[2016-08-16 11:01:40,649][INFO, (NettyServer.java:45).run] websocket_text server started at port 8080.
+[2016-08-16 11:05:19,528][INFO, (NettyServer.java:45).run] socket server started at port 8080.
+[2016-08-16 11:08:50,402][INFO, (InitHandler.java:23).execute] 收到的字符串为：Are you ok?
+[2016-08-16 11:11:01,470][INFO, (InitHandler.java:23).execute] 收到的字符串为：Are you ok?
+[2016-08-16 11:42:17,254][INFO, (InitHandler.java:23).execute] 收到的字符串为：Are you ok?
+[2016-08-16 14:19:53,990][INFO, (NettyServer.java:45).run] websocket_binary server started at port 8080.
+[2016-08-16 14:25:06,467][INFO, (NettyServer.java:45).run] websocket_binary server started at port 8080.
+[2016-08-16 14:27:36,968][INFO, (NettyServer.java:45).run] socket server started at port 8080.
+[2016-08-16 15:03:51,677][INFO, (NettyServer.java:45).run] socket server started at port 8080.
+[2016-08-16 15:48:16,534][INFO, (NettyServer.java:45).run] socket server started at port 8080.
+[2016-08-16 15:48:50,041][INFO, (NettyServer.java:45).run] socket server started at port 8080.
+[2016-08-16 16:42:24,596][INFO, (NettyServer.java:45).run] socket server started at port 8080.
+[2016-08-17 10:00:03,990][INFO, (NettyServer.java:45).run] socket server started at port 8080.
+[2016-08-17 14:51:53,508][INFO, (NettyServer.java:45).run] socket server started at port 8080.
+[2016-08-17 15:03:20,778][INFO, (NettyServer.java:47).run] socket server started at port 8080.
+[2016-08-17 15:09:00,945][INFO, (NettyServer.java:47).run] socket server started at port 8080.
+[2016-08-17 15:09:34,358][WARN, (Slf4JLogger.java:151).warn] An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.handler.codec.DecoderException: java.lang.IllegalStateException: Unknown command
+	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:417)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:139)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeChannelRead(DefaultChannelHandlerContext.java:338)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:324)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:785)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:126)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalStateException: Unknown command
+	at cpgame.demo.utils.RedisCommandDecoder.doSendCmdToHandler(RedisCommandDecoder.java:81)
+	at cpgame.demo.utils.RedisCommandDecoder.decode(RedisCommandDecoder.java:29)
+	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:362)
+	... 10 more
+[2016-08-17 15:09:44,293][WARN, (Slf4JLogger.java:151).warn] An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.handler.codec.DecoderException: java.lang.IllegalStateException: Unknown command
+	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:417)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:139)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeChannelRead(DefaultChannelHandlerContext.java:338)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:324)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:785)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:126)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalStateException: Unknown command
+	at cpgame.demo.utils.RedisCommandDecoder.doSendCmdToHandler(RedisCommandDecoder.java:81)
+	at cpgame.demo.utils.RedisCommandDecoder.decode(RedisCommandDecoder.java:29)
+	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:362)
+	... 10 more
+[2016-08-17 15:09:54,292][WARN, (Slf4JLogger.java:151).warn] An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:384)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:871)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:208)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:118)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-08-17 15:09:54,296][WARN, (Slf4JLogger.java:151).warn] An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.handler.codec.DecoderException: java.lang.IllegalStateException: Unknown command
+	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:417)
+	at io.netty.handler.codec.ReplayingDecoder.channelInactive(ReplayingDecoder.java:328)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeChannelInactive(DefaultChannelHandlerContext.java:238)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelInactive(DefaultChannelHandlerContext.java:224)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelInactive(DefaultChannelPipeline.java:767)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$5.run(AbstractChannel.java:560)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:354)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:353)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalStateException: Unknown command
+	at cpgame.demo.utils.RedisCommandDecoder.doSendCmdToHandler(RedisCommandDecoder.java:81)
+	at cpgame.demo.utils.RedisCommandDecoder.decode(RedisCommandDecoder.java:29)
+	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:362)
+	... 9 more
+[2016-08-17 15:13:32,446][INFO, (NettyServer.java:47).run] socket server started at port 8080.
+[2016-08-17 15:14:01,930][WARN, (Slf4JLogger.java:151).warn] An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.handler.codec.DecoderException: java.lang.IllegalStateException: Unknown command
+	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:417)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:139)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeChannelRead(DefaultChannelHandlerContext.java:338)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:324)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:785)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:126)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalStateException: Unknown command
+	at cpgame.demo.utils.RedisCommandDecoder.doSendCmdToHandler(RedisCommandDecoder.java:84)
+	at cpgame.demo.utils.RedisCommandDecoder.decode(RedisCommandDecoder.java:29)
+	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:362)
+	... 10 more
+[2016-08-17 15:14:11,891][WARN, (Slf4JLogger.java:151).warn] An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.handler.codec.DecoderException: java.lang.IllegalStateException: Unknown command
+	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:417)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:139)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeChannelRead(DefaultChannelHandlerContext.java:338)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:324)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:785)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:126)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalStateException: Unknown command
+	at cpgame.demo.utils.RedisCommandDecoder.doSendCmdToHandler(RedisCommandDecoder.java:84)
+	at cpgame.demo.utils.RedisCommandDecoder.decode(RedisCommandDecoder.java:29)
+	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:362)
+	... 10 more
+[2016-08-17 15:14:21,892][WARN, (Slf4JLogger.java:151).warn] An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:384)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:871)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:208)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:118)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-08-17 15:14:21,895][WARN, (Slf4JLogger.java:151).warn] An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.handler.codec.DecoderException: java.lang.IllegalStateException: Unknown command
+	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:417)
+	at io.netty.handler.codec.ReplayingDecoder.channelInactive(ReplayingDecoder.java:328)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeChannelInactive(DefaultChannelHandlerContext.java:238)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelInactive(DefaultChannelHandlerContext.java:224)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelInactive(DefaultChannelPipeline.java:767)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$5.run(AbstractChannel.java:560)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:354)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:353)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalStateException: Unknown command
+	at cpgame.demo.utils.RedisCommandDecoder.doSendCmdToHandler(RedisCommandDecoder.java:84)
+	at cpgame.demo.utils.RedisCommandDecoder.decode(RedisCommandDecoder.java:29)
+	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:362)
+	... 9 more
+[2016-08-17 15:20:34,808][INFO, (NettyServer.java:47).run] socket server started at port 8080.
+[2016-08-17 15:22:15,875][WARN, (Slf4JLogger.java:151).warn] An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.handler.codec.DecoderException: java.lang.IllegalStateException: Unknown command
+	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:417)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:139)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeChannelRead(DefaultChannelHandlerContext.java:338)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:324)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:785)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:126)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalStateException: Unknown command
+	at cpgame.demo.utils.RedisCommandDecoder.doSendCmdToHandler(RedisCommandDecoder.java:84)
+	at cpgame.demo.utils.RedisCommandDecoder.decode(RedisCommandDecoder.java:29)
+	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:362)
+	... 10 more
+[2016-08-17 15:22:25,773][WARN, (Slf4JLogger.java:151).warn] An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.handler.codec.DecoderException: java.lang.IllegalStateException: Unknown command
+	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:417)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:139)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeChannelRead(DefaultChannelHandlerContext.java:338)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:324)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:785)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:126)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalStateException: Unknown command
+	at cpgame.demo.utils.RedisCommandDecoder.doSendCmdToHandler(RedisCommandDecoder.java:84)
+	at cpgame.demo.utils.RedisCommandDecoder.decode(RedisCommandDecoder.java:29)
+	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:362)
+	... 10 more
+[2016-08-17 15:22:35,774][WARN, (Slf4JLogger.java:151).warn] An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:384)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:871)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:208)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:118)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-08-17 15:22:35,777][WARN, (Slf4JLogger.java:151).warn] An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.handler.codec.DecoderException: java.lang.IllegalStateException: Unknown command
+	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:417)
+	at io.netty.handler.codec.ReplayingDecoder.channelInactive(ReplayingDecoder.java:328)
+	at io.netty.channel.DefaultChannelHandlerContext.invokeChannelInactive(DefaultChannelHandlerContext.java:238)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelInactive(DefaultChannelHandlerContext.java:224)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelInactive(DefaultChannelPipeline.java:767)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$5.run(AbstractChannel.java:560)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:354)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:353)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalStateException: Unknown command
+	at cpgame.demo.utils.RedisCommandDecoder.doSendCmdToHandler(RedisCommandDecoder.java:84)
+	at cpgame.demo.utils.RedisCommandDecoder.decode(RedisCommandDecoder.java:29)
+	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:362)
+	... 9 more
+[2016-08-18 15:35:25,861][WARN, (Slf4JLogger.java:151).warn] An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:384)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:871)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:208)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:118)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101)
+	at java.lang.Thread.run(Thread.java:745)

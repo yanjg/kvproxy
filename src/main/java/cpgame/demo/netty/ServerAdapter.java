@@ -45,6 +45,7 @@ public class ServerAdapter extends SimpleChannelInboundHandler<Object> {
 	
 	@Override
 	protected void channelRead0(ChannelHandlerContext ctx, Object msg) throws Exception {
+		System.out.println("this is ServerAdapter");
 		if ((msg instanceof ByteBuf))
 			socketRequest(ctx, msg);
 		else if ((msg instanceof FullHttpRequest))
@@ -54,16 +55,8 @@ public class ServerAdapter extends SimpleChannelInboundHandler<Object> {
 		
 	}
 
-//	public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-//		if ((msg instanceof ByteBuf))
-//			socketRequest(ctx, msg);
-//		else if ((msg instanceof FullHttpRequest))
-//			httpFullRequest(ctx, msg);
-//		else if ((msg instanceof WebSocketFrame))
-//			handleWebSocketFrame(ctx, msg);
-//	}
-
 	public void channelReadComplete(ChannelHandlerContext ctx) throws Exception {
+		System.out.println("读取完毕");
 		ctx.flush();
 	}
 
