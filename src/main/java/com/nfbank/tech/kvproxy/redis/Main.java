@@ -38,8 +38,8 @@ public class Main {
 						public void initChannel(SocketChannel ch) throws Exception {
 							ChannelPipeline p = ch.pipeline();
 							// p.addLast(new ByteLoggingHandler(LogLevel.INFO));
-							p.addLast(new RedisCommandDecoder());
-							p.addLast(new RedisReplyEncoder());
+//							p.addLast(new RedisCommandDecoder());
+//							p.addLast(new RedisReplyEncoder());
 							p.addLast(group, commandHandler);
 						}
 					});

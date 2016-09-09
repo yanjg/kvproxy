@@ -23,9 +23,9 @@
 	</bean>
 <!-- p:password="${redis.password}" -->
 	<bean id="connectionFactory"
-		class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory"
+		class="com.nfbank.tech.kvproxy.redis.MyJedisConnectionFactory"
 		p:host-name="${redis.host}" p:port="${redis.port}" p:pool-config-ref="poolConfig"
-		p:database="${redis.index}" p:timeout="10000" p:password="${redis.password}"/>
+		p:database="${redis.index}" p:timeout="10000" p:password="${redis.password}" p:clientName="MyTestClient" />
 
 	<bean id="redisTemplate" class="org.springframework.data.redis.core.RedisTemplate">
 		<property name="connectionFactory" ref="connectionFactory" />

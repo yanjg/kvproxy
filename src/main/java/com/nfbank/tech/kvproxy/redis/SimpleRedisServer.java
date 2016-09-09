@@ -11,6 +11,7 @@ import static java.lang.Integer.MAX_VALUE;
 
 import java.lang.reflect.Field;
 import java.security.SecureRandom;
+import java.sql.Time;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -21,6 +22,7 @@ import java.util.Map;
 import java.util.Random;
 import java.util.Set;
 import java.util.SortedSet;
+import java.util.concurrent.TimeUnit;
 
 import com.nfbank.tech.kvproxy.protocal.redis.netty4.BulkReply;
 import com.nfbank.tech.kvproxy.protocal.redis.netty4.IntegerReply;
@@ -206,7 +208,7 @@ public class SimpleRedisServer implements RedisServer {
 		RedisUtils redisUtils = Main.factory.getBean(RedisUtils.class);
 		redisUtils.set(key, (byte[]) value, 0);
 		System.out.println("the key1: " + new String(key));
-		System.out.println("the value: " + value.toString());
+		System.out.println("the value: " + new String((byte[])value));
 		return data.put(key, value);
 	}
 
@@ -1475,13 +1477,13 @@ public class SimpleRedisServer implements RedisServer {
 	 */
 	@Override
 	public IntegerReply expire(byte[] key0, byte[] seconds1) throws RedisException {
-		Object o = _get(key0);
-		if (o == null) {
-			return integer(0);
-		} else {
-			expires.put(key0, bytesToNum(seconds1) * 1000 + now());
-			return integer(1);
-		}
+		RedisUtils redisUtils = Main.factory.getBean(RedisUtils.class);
+		boolean result=redisUtils.getRedisTemplate().expire(new String(key0), bytesToNum(seconds1) * 1000, TimeUnit.SECONDS);
+		System.out.println("the expire result:"+result);
+//		System.out.println("the key:"+new String(key0));
+//		redisUtils.set("yan", "111", MAX_VALUE);
+//		System.out.println("the value:"+ redisUtils.get(new String(key0)));
+		return integer(1);
 	}
 
 	/**
